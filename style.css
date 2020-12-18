@@ -1,0 +1,214 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Philosopher', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, #08E0A8 , #0084BF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  text-align: center;
+}
+
+h1, h2, .fa-sort-down {
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-size: 5rem;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  display: block;
+}
+
+.fa-sort-down {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.85);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.85);
+	}
+}
+
+main {
+  width: 100%;
+}
+
+.about {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+
+}
+
+.about h2 {
+  color: #0084BF;
+  width: 100%;
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+}
+
+.aboutContent {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.aboutPic {
+  width: 40%;
+  
+}
+
+.aboutPic img {
+  max-width: 100%;
+}
+
+.aboutDetails {
+  width: 40%;
+  font-family: 'Playfair Display', serif;
+}
+
+.skillsBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skillBox {
+  text-align: center;
+  font-size: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 1rem;
+}
+
+.skillBox span {
+  font-size: 1rem;
+}
+.projects {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.projects h2 {
+  color: #0084BF;
+  width: 100%;
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.contact h2 {
+  color: #0084BF;
+  width: 100%;
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+}
+
+.projectContainer {
+  width: 100%;
+  
+}
+
+.project {
+  width: 60%;
+  margin: 2rem auto;
+  background-color: rgba(0, 132, 191, 0.4);
+  padding: 16px;
+  border-radius: 15px;
+  margin-bottom: 4rem;
+}
+
+.projectLink, .projectLink:visited {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #222222;
+  padding: .5rem 1rem;
+  color: ghostwhite;
+  border-radius: 5px;
+}
+
+.project img {
+  max-width: 100%;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.project h3 {
+  font-size: 2rem;
+  margin: .25rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.project div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contactContainer {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.splashIcons i {
+  font-size: 2rem;
+  margin: 1rem 2rem;
+}
+
+.splashIcons i:hover {
+  transform: scale(1.2);
+}
+
+.splashIcons a, .splashIcons a:visited {
+  color: black;
+  text-decoration: none;
+}
