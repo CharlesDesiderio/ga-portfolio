@@ -16,7 +16,40 @@ body {
   padding: 0;
 }
 
+nav {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .75rem;
+  font-size: 1rem;
+}
+
+nav span {
+  font-size: 1.20rem;
+  color:  #08E0A8;
+}
+
+nav div a, nav div a:visited {
+  display: inline-block;
+  width: 100px;
+  color: #0084BF;
+}
+
+nav div {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 header {
+  position: relative;
+  z-index: 10;
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to right, #08E0A8 , #0084BF);
@@ -25,6 +58,10 @@ header {
   justify-content: center;
 }
 
+
+#about, #projects, #contacts {
+  padding-top: 5rem !important;
+}
 .info {
   text-align: center;
 }
@@ -44,6 +81,14 @@ h2 {
 
 .fa-sort-down {
   animation: pulse 2s infinite;
+}
+
+.resumeLink, .resumeLink a, .resumeLink a:visited {
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 @keyframes pulse {
@@ -197,6 +242,14 @@ main {
   width: 50%;
   margin: auto;
   margin-bottom: 5rem;
+  text-align: center;
+}
+
+.contactContainer span {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .splashIcons i {
@@ -272,6 +325,18 @@ main {
 
   .contact {
     margin-bottom: 3rem;
+  }
+
+  nav div {
+    font-size: .75rem;
+  }
+
+  nav div a {
+    width: 60px;
+  }
+
+  nav span {
+    font-size: .75rem;
   }
 
 }
